@@ -22,12 +22,6 @@ int eval_args(char *flag, FILE *fp) {
             printf("\nError: Could not write into file.\n");
             return 1;
         }
-    } else if (strcmp(flag, "-h") || strcmp(flag, "--help")) {
-        printf(HELP_FLAG);
-        return 0;
-    } else {
-        printf("\nError: Please enter a valid flag (-c or --create).");
-        return 1;
     }
 
     printf("\nNote created.\n");
@@ -38,6 +32,7 @@ int main(int argc, char* argv[]) {
     if (argc > 2) {
         char *flag = argv[1];
         char *filepath = argv[2];
+        flag[strcspn(flag, "\n")] = '\0';
         filepath[strcspn(filepath, "\n")] = '\0';
 
         if (flag == NULL || strcmp(filepath, "")) {
@@ -57,7 +52,15 @@ int main(int argc, char* argv[]) {
 
         fclose(fp);
     } else {
-        printf(HELP_FLAG);
-        return 1;
+        char *flag = argv[1];
+        flag[strcspn(flag, "\n")] = '\0';
+
+        if (strcmp(flag, "-h") || strcmp(flag, "--help")) {
+            printf(HELP_FLAG);
+            return 0;
+        } else {
+            printf("\nError: Please enter a valid flag (-c or --create).");
+            return 1;
+        }
     }
 }
