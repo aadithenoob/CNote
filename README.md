@@ -1,2 +1,2 @@
 # CNote
-A command-line file builder, made in C
+### A command-line file builder, made in C

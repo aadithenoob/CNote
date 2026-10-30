@@ -9,7 +9,7 @@
 int eval_args(char *flag, FILE *fp) {
     if (strcmp(flag, "-c") || strcmp(flag, "--create")) {
         char line_buffer[256];
-        printf("Enter content:\n");
+        printf("Enter content (type 'END' to finish):\n");
 
         while (fgets(line_buffer, sizeof(line_buffer), stdin) != NULL) {
             if (strcmp(line_buffer, "END\n") == 0) {
