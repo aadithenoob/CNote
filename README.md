@@ -38,4 +38,3 @@ Hey! This is an example.
 ## License
 
 MIT
-it 
