@@ -1,41 +1,41 @@
 # CNote
 
-A command-line file builder, made in C
+A command-line file builder written in C.
 
-## Install
+## Installation
 
 ```bash
-git clone https://github.com/aadithenoob/CNote
+git clone [https://github.com/aadithenoob/CNote](https://github.com/aadithenoob/CNote)
 cd CNote
 make
 ```
+
 ## Usage
 
-### `./cnote <flag> <filepath>`
+```bash
+./cnote <flag> <filepath>
+```
 
-### Flags
+## Flags
 
-1. `-c` or `--create`: Creates a file at the provided file path with the entered content.
+1. **`-c`**, **`--create`**: Creates a file at the specified path and populates it with interactive input.
+2. **`-h`**, **`--help`**: Displays help text and exits.
 
-**Example:**
+### Example
 
 ```bash
 $ ./cnote -c example.txt
 Enter content (type 'END' to finish):
-
 Hey! This is an example.
 END
 
 Note created.
 
-$ cat example.txt                                                    
+$ cat example.txt
 Hey! This is an example.
-
-$ 
 ```
 
-2. `-h` or `--help`: Displayes help text and exits.
-
-# License
+## License
 
 MIT
+```
