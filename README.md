@@ -11,11 +11,11 @@ make
 ```
 ## Usage
 
-`./cnote <flag> <filepath>`
+### `./cnote <flag> <filepath>`
 
 ### Flags
 
-1. `-c` or '--create': Creates a file at the provided file path with the entered content.
+1. `-c` or '--create' : Creates a file at the provided file path with the entered content.
 
 **Example:**
 
@@ -34,7 +34,7 @@ Hey! This is an example.
 $ 
 ```
 
-2. '-h' or '--help': Display help text and exit.
+2. '-h' or '--help' : Display help text and exit.
 
 # License
 
