@@ -5,7 +5,7 @@ A command-line file builder written in C.
 ## Installation
 
 ```bash
-git clone [https://github.com/aadithenoob/CNote](https://github.com/aadithenoob/CNote)
+git clone https://github.com/aadithenoob/CNote
 cd CNote
 make
 ```
