@@ -4,7 +4,7 @@ A command-line file builder, made in C
 
 ## Install
 
-```command-line
+```bash
 git clone https://github.com/aadithenoob/CNote
 cd CNote
 make
@@ -15,11 +15,11 @@ make
 
 ### Flags
 
-1. `-c` or '--create' : Creates a file at the provided file path with the entered content.
+1. `-c` or `--create`: Creates a file at the provided file path with the entered content.
 
 **Example:**
 
-```command-line
+```bash
 $ ./cnote -c example.txt
 Enter content (type 'END' to finish):
 
@@ -34,7 +34,7 @@ Hey! This is an example.
 $ 
 ```
 
-2. '-h' or '--help' : Display help text and exit.
+2. `-h` or `--help`: Displayes help text and exits.
 
 # License
 
